@@ -13,8 +13,8 @@ estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 
 **[subfiles](subfiles):** Subroutines called in `mainAnalysisOilSupplyNews.m`
 - [transformAndPlotData.m](subfiles/transformAndPlotData.m): function to transform (and plot) raw data
 - [loadProxy.m](subfiles/loadProxy.m): function to read in external instrument
-- [runProxyVAR.m](functions/runProxyVAR.m): function to estimate proxy VAR; bands are computed using bootstrapping techniques
-- [runRigobonVAR.m](functions/runRigobonVAR.m): function to estimate heteroskedasticity-based VAR; bands are computed using bootstrapping techniques
+- [runProxyVAR.m](subfiles/runProxyVAR.m): function to estimate proxy VAR; bands are computed using bootstrapping techniques
+- [runRigobonVAR.m](subfiles/runRigobonVAR.m): function to estimate heteroskedasticity-based VAR; bands are computed using bootstrapping techniques
 
 **[auxfiles](auxfiles):** Matlab routines to estimate VARX using OLS, as well as other subroutines.
 
