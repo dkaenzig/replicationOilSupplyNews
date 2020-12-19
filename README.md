@@ -26,4 +26,4 @@ estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 
 **[\figures](figures):** Stores results from analysis
 
 
-**[paper](figures):** Pdf containing paper and online appendix
+**[paper](Känzig 2020 - The macroeconomic effects of oil supply news.pdf):** Pdf containing paper and online appendix
