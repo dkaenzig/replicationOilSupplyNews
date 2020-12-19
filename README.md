@@ -8,7 +8,7 @@ Tested in: Matlab 2019b on Windows 10 (64-bit)
 # Contents
 
 **[mainAnalysisOilSupplyNews.m](mainAnalysisOilSupplyNews.m)**: Main shell to reproduce all results. For external instruments
-estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 'hetero'`.
+estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 'hetero'`
 
 **[\subfiles](subfiles):** Subroutines called in `mainAnalysisOilSupplyNews.m`
 - [transformAndPlotData.m](subfiles/transformAndPlotData.m): function to transform (and plot) raw data
@@ -16,7 +16,7 @@ estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 
 - [runProxyVAR.m](subfiles/runProxyVAR.m): function to estimate proxy VAR; bands are computed using bootstrapping techniques
 - [runRigobonVAR.m](subfiles/runRigobonVAR.m): function to estimate heteroskedasticity-based VAR; bands are computed using bootstrapping techniques
 
-**[\auxfiles](auxfiles):** Matlab routines to estimate VARX using OLS, as well as other subroutines.
+**[\auxfiles](auxfiles):** Matlab routines to estimate VARX using OLS, as well as other subroutines
 
 **[\data](data):** Data for analysis
 - [OilDataM.mat](data/OilDataM.mat): raw data used in VAR
@@ -24,3 +24,6 @@ estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 
 - [OilSurprisesMLogControl.mat](data/OilSurprisesMLogControl.mat): control series 
 
 **[\figures](figures):** Stores results from analysis
+
+
+**[paper](figures):** Pdf containing paper and online appendix
