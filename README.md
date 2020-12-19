@@ -8,9 +8,11 @@ Tested in: Matlab 2019b on Windows 10 (64-bit)
 # Contents
 
 **[mainAnalysisOilSupplyNews.m](mainAnalysisOilSupplyNews.m)**: Main shell to reproduce all results. For external instruments
-estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType    = 'hetero'`.
+estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 'hetero'`.
 
-**[subfiles](subfiles):** Subroutines called in mainAnalysisOilSupplyNews.m
+**[subfiles](subfiles):** Subroutines called in `mainAnalysisOilSupplyNews.m`
+- [loadData.m](subfiles/loadProxy.m): main function for SVMA-IV inference
+- [SVARIV_estim.m](functions/SVARIV_estim.m): SVAR-IV inference (assumes invertibility)
 
 **[auxfiles](auxfiles):** Matlab routines to estimate VARX using OLS, as well as other subroutines.
 
