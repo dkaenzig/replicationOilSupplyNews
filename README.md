@@ -8,7 +8,7 @@ Tested in: Matlab 2019b on Windows 10 (64-bit)
 # Contents
 
 **[mainAnalysisOilSupplyNews.m](mainAnalysisOilSupplyNews.m)**: Main shell to reproduce all results. For external instruments
-estimator, set estType = 'proxy'; for heteroskedasticity-based set estType    = 'hetero';
+estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType    = 'hetero'`.
 
 **[subfiles](subfiles):** Subroutines called in mainAnalysisOilSupplyNews.m
 
