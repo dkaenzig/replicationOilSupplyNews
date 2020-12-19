@@ -11,11 +11,16 @@ Tested in: Matlab 2019b on Windows 10 (64-bit)
 estimator, set `estType = 'proxy'`; for heteroskedasticity-based set `estType = 'hetero'`.
 
 **[subfiles](subfiles):** Subroutines called in `mainAnalysisOilSupplyNews.m`
-- [loadData.m](subfiles/loadProxy.m): main function for SVMA-IV inference
-- [SVARIV_estim.m](functions/SVARIV_estim.m): SVAR-IV inference (assumes invertibility)
+- [transformAndPlotData.m](subfiles/transformAndPlotData.m): function to transform (and plot) raw data
+- [loadProxy.m](subfiles/loadProxy.m): function to read in external instrument
+- [runProxyVAR.m](functions/runProxyVAR.m): function to estimate proxy VAR; bands are computed using bootstrapping techniques
+- [runRigobonVAR.m](functions/runRigobonVAR.m): function to estimate heteroskedasticity-based VAR; bands are computed using bootstrapping techniques
 
 **[auxfiles](auxfiles):** Matlab routines to estimate VARX using OLS, as well as other subroutines.
 
 **[data](data):** Data for analysis
+- [OilDataM.mat](data/OilDataM.mat): raw data used in VAR
+- [OilSurprisesMLog.mat](data/OilSurprisesMLog.mat): oil supply surprise series constructed using high-frequency approach
+- [OilSurprisesMLogControl.mat](data/OilSurprisesMLogControl.mat): control series 
 
-**[figures](figures):** Results
+**[figures](figures):** Stores results from analysis
