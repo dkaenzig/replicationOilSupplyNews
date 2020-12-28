@@ -253,13 +253,14 @@ if getHD
     
     timeHD = sampleDatesNum(smplStartProxyVARInd:smplEndProxyVARInd);
     oilDates = [1978+8/12 1980+9/12 1985+11/12 1990+7/12 1997+6/12 2002+10/12 2008+8/12 2014+10/12];
+    
     figure('Position',[100 100 1000 350],'DefaultAxesFontSize',13)
     hold on
-    hh=fill([timeHD(1); timeHD(1:end); flipud([timeHD(1:end); timeHD(end)])],[HDshockupper(1,1); HDshocklower(1:end,1); flipud([HDshockupper(1:end,1); HDshocklower(end,1)])],[0.1, 0.4470, 0.7410]); 
+    hh=fill([timeHD(1); timeHD(1:end); flipud([timeHD(1:end); timeHD(end)])],[HDshockupper(1,1); HDshocklower(1:end,1); flipud([HDshockupper(1:end,1); HDshocklower(end,1)])]-mean(HDshock(:,1)),[0.1, 0.4470, 0.7410]); 
     set(hh,'facealpha',.2);
     set(hh,'edgecolor','none'); 
     
-    hh=fill([timeHD(1); timeHD(1:end); flipud([timeHD(1:end); timeHD(end)])],[HDshockupper2(1,1); HDshocklower2(1:end,1); flipud([HDshockupper2(1:end,1); HDshocklower2(end,1)])],[0.1, 0.4470, 0.7410]); 
+    hh=fill([timeHD(1); timeHD(1:end); flipud([timeHD(1:end); timeHD(end)])],[HDshockupper2(1,1); HDshocklower2(1:end,1); flipud([HDshockupper2(1:end,1); HDshocklower2(end,1)])]-mean(HDshock(:,1)),[0.1, 0.4470, 0.7410]); 
     set(hh,'facealpha',.4);
     set(hh,'edgecolor','none'); 
     set(hh,'edgealpha',.4);
